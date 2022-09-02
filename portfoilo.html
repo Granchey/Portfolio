@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="portfolioStyleSheet.css">
+	<link rel="stylesheet" type="text/css" href="portfotlioColoursCss.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+	<title>StarLabsPortfolio Granit Kuqi</title>
+</head>
+<body>
+	<section class="hero-container">
+		<div class="circle-container">
+			<div class="circle">
+				<button class="btn btn-close">
+					
+						<i class="fas fa-snowboarding "></i>
+					
+				</button>
+				<button class="btn btn-open">
+						<i class="fas fa-snowboarding "></i>
+				</button>	
+			</div>
+		</div>
+
+
+		<!-- mobile -->
+		<input type="checkbox" id="active"/>
+		<label for="active" class="menu-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+
+		 <div class="menu">
+		 	<ul class="list nav_list">
+				<li class="list_item">
+					<a href="https://www.linkedin.com/in/granit-kuqi-961362237/" class="list_link">About Me</a>
+				</li>
+
+				<li class="list_item">
+					<a href="https://www.facebook.com/granit.kuqi.5/" class="list_link">Facebook</a>
+				</li>
+
+				<li class="list_item">
+					<a href="https://www.instagram.com/granitkuqi_/" class="list_link">Instagram</a>
+				</li>
+
+				<li class="list_item">
+					<a href="mailto:kuqigranit18@gmail.com" class="list_link">Contact Me</a>
+				</li>
+			</ul>
+		 </div>
+		<nav>
+			<ul class="list nav_list">
+				<li class="list_item">
+					<a href="https://www.linkedin.com/in/granit-kuqi-961362237/" class="list_link">About Me</a>
+				</li>
+
+				<li class="list_item">
+					<a href="https://www.facebook.com/granit.kuqi.5/" class="list_link">Facebook</a>
+				</li>
+
+				<li class="list_item">
+					<a href="https://www.instagram.com/granitkuqi_/" class="list_link">Instagram</a>
+				</li>
+
+				<li class="list_item">
+					<a href="mailto:kuqigranit18@gmail.com" class="list_link">Contact Me</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="grid">
+			<div class="hero_content">
+				<h1 class="hero_title">I'm Grait Kuqi</h1>
+				<p class="hero_subtitle">Software Developer</p>
+				<a href="mailto:kuqigranit18@gmail.com" class="hero_btn">Collaborarion</a>
+			</div>
+			<div class="hero_image">
+				<img src="robot.png" alt="here should be an image">
+			</div>
+		</main>
+	</section>
+
+	<footer class="footer">
+		<ul class="list footer_list">
+			<li>
+				<a href="https://www.linkedin.com/in/granit-kuqi-961362237/" class="list_link">Education</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/granit-kuqi-961362237/" class="list_link">Skills</a>
+			</li>
+			<li>
+				<a href="https://github.com/Granchey?tab=repositories" class="list_link">Projects</a>
+			</li>
+		</ul>
+	</footer>
+	<script >
+		const container = document.querySelector(".hero-container");
+
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    container.classList.toggle("active");
+  });
+});
+
+	</script>
+</body>
+</html>
